@@ -76,6 +76,7 @@
       - { name: dropbox }
       - { name: google-japanese-ime }
       - { name: sequel-pro }
+      - { name: kindle }
 
   tasks:
     - name: homebrew の tap リポジトリを追加
