@@ -118,10 +118,10 @@
       with_items: cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
 
     # oh-my-zsh
-    #- name: oh-my-zsh のインストール
-    #  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-    #  args:
-    #    creates: ~/.oh-my-zsh/
+    - name: oh-my-zsh のインストール
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+      args:
+        creates: ~/.oh-my-zsh/
 
     # Ricty
     - name: xquartz のインストール (for Ricty)
