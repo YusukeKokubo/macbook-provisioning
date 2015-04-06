@@ -40,6 +40,7 @@
 #      - { name: lha }
 #      - { name: flow }
       - { name: mysql }
+      - { name: postgres }
       - { name: sqlite }
 #      - { name: redis }
       - { name: imagemagick }
@@ -74,6 +75,7 @@
       - { name: 1password }
       - { name: dropbox }
       - { name: google-japanese-ime }
+      - { name: sequel-pro }
 
   tasks:
     - name: homebrew の tap リポジトリを追加
