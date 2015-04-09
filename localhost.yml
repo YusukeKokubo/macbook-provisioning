@@ -123,6 +123,11 @@
       args:
         creates: ~/.oh-my-zsh/
 
+    # NeoBundle
+    - name: install NeoBundle
+      file: path=~/.vim/bundle state=directory
+      notify: install neobundle
+
     # Ricty
     - name: xquartz のインストール (for Ricty)
       homebrew_cask: name=xquartz
@@ -139,3 +144,6 @@
   handlers:
     - name: run fc-cache
       shell: fc-cache -vf
+    - name: install neobundle
+      command: git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+
